@@ -12,13 +12,13 @@ import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Rizal",
-  lastName: "M. Yusuf",
+  lastName: "Maulana Yusuf",
   name: `Rizal M. Yusuf`,
-  role: "Back-End Developer & Educator",
+  role: "Full-Stack Developer & Educator",
   avatar: "/images/avatar.jpg",
   email: "rijalmy010600@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa", "Sunda"],
+  location: "Asia/Jakarta", // Expecting the IANA time zone identifier
+  languages: ["English", "Bahasa", "Sundanese", "Arabic"],
 };
 
 const newsletter: Newsletter = {
@@ -30,11 +30,6 @@ const newsletter: Newsletter = {
 const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
-  {
-    name: "WhatsApp",
-    icon: "whatsapp",
-    link: "https://wa.me/6285155209076",
-  },
   {
     name: "Telegram",
     icon: "telegram",
@@ -88,24 +83,25 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building and maintaining website applications</>,
+  headline: <>Building and Maintaining Website Applications</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Freelance</strong>{" "}
+        <strong className="ml-4">TTW Apps</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Open to work
+          Latest project
         </Text>
       </Row>
     ),
-    href: "",
+    href: "https://rizaalmyusuf.vercel.app/work/ttw-improve-students-logical-thinking-skills",
   },
   subline: (
     <>
-      I'm {person.firstName}, my fullname is Rizal Maulana Yusuf. <br />
-	A web developer as well as an educator, who is always interested in world technological advances.
+      I'm {person.firstName}, my fullname is Rizal Maulana Yusuf. <br />A
+      full-stack developer as well as an educator, who is always interested in
+      world technological advances.
     </>
   ),
 };
@@ -131,7 +127,13 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.role}.
+        As a {person.role}, I specialize in website development and
+        technology-based education. Armed with strong analytical skills and
+        experience in designing, developing, and optimizing digital systems, I
+        am committed to creating innovative solutions with real impact. With a
+        balanced academic and professional background in technology and
+        education, I am focused on collaboration, efficiency, and IT-based human
+        resource development.
       </>
     ),
   },
@@ -145,12 +147,22 @@ const about: About = {
         role: "Vice Principal",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Designing and developing national and specialized curricula for
+            junior high schools (Package B), which are implemented in 70% of
+            student school activities.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Managing student administrative data and grades, which increased
+            efficiency by 50% through a digital system.
+          </>,
+          <>
+            Assisting students in memorizing the Qur'an and developing Islamic
+            character, which successfully achieved 2 juz of memorization during
+            one academic year.
+          </>,
+          <>
+            Managing the official social media of SMP PINTAR, which increased
+            engagement by 20%.
           </>,
         ],
         images: [],
@@ -161,12 +173,17 @@ const about: About = {
         role: "Equality Program Manager",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Designing and developing national and customized curricula for
+            equivalency programs, which are implemented in 80% of student school
+            activities.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Managing student administrative data and grades, which has increased
+            efficiency by 50% through a digital system.
+          </>,
+          <>
+            Managing PKBM PINTAR's official social media, which has increased
+            engagement by 40%.
           </>,
         ],
         images: [],
@@ -177,12 +194,17 @@ const about: About = {
         role: "IT Support",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Designing graphic designs for posters/banners/banners for marketing
+            or informational purposes, resulting in more than hundreds of
+            designs being printed and distributed.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Assisting in setting up technical electronic equipment for
+            activities, which increased event preparation efficiency by 50%.
+          </>,
+          <>
+            Managing the foundation's official website, which increased
+            engagement by 10%.
           </>,
         ],
         images: [],
@@ -287,9 +309,7 @@ const about: About = {
       },
       {
         title: "Curriculum Development",
-        description: (
-          <>Developing curriculum.</>
-        ),
+        description: <>Developing curriculum.</>,
         tags: [],
         images: [],
       },

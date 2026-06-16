@@ -14,11 +14,11 @@ const person: Person = {
   firstName: "Rizal",
   lastName: "Maulana Yusuf",
   name: `Rizal M. Yusuf`,
-  role: "Full-Stack Developer & Educator",
+  role: "DevOps Engineer & IT Support",
   avatar: "/images/avatar.jpg",
   email: "rijalmy010600@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier
-  languages: ["English", "Bahasa", "Sundanese", "Arabic"],
+  languages: ["English", "Bahasa", "Arabic"],
 };
 
 const newsletter: Newsletter = {
@@ -83,25 +83,25 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building and Maintaining Website Applications</>,
+  headline: <>Build, Automate, Deploy, and Monitor Applications</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">TTW Apps</strong>{" "}
+        <strong className="ml-4">ALYSA</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Latest project
         </Text>
       </Row>
     ),
-    href: "https://rizaalmyusuf.vercel.app/work/ttw-improve-students-logical-thinking-skills",
+    href: "https://rizaalmyusuf.vercel.app/work/alysa-automation-logic-for-your-system-assurance",
   },
   subline: (
     <>
-      I'm {person.firstName}, my fullname is Rizal Maulana Yusuf. <br />A
-      full-stack developer as well as an educator, who is always interested in
-      world technological advances.
+      I'm {person.firstName}, my fullname is Rizal Maulana Yusuf. <br />A DevOps
+      Engineer and IT Support specialist, who is always interested in world
+      technological advances.
     </>
   ),
 };
@@ -127,13 +127,12 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        As a {person.role}, I specialize in website development and
-        technology-based education. Armed with strong analytical skills and
-        experience in designing, developing, and optimizing digital systems, I
-        am committed to creating innovative solutions with real impact. With a
-        balanced academic and professional background in technology and
-        education, I am focused on collaboration, efficiency, and IT-based human
-        resource development.
+        As a {person.role}, I specialize in IT development and operations. Armed
+        with strong analytical skills and experience in building, automating,
+        and monitoring digital systems, I am committed to creating innovative
+        solutions with real impact. With a balanced academic and professional
+        background in technology, I am focused on collaboration, efficiency, and
+        IT-based human resource development.
       </>
     ),
   },
@@ -141,6 +140,30 @@ const about: About = {
     display: true,
     title: "Work Experience",
     experiences: [
+      {
+        company: "PT. Telekomunikasi Indonesia (Persero) Tbk",
+        timeframe: "2025 - 2026",
+        role: "DevOps Engineer",
+        achievements: [
+          <>
+            Built and maintained CI/CD pipelines for continuous integration and
+            deployment.
+          </>,
+          <>Built an automated testing framework for improved code quality.</>,
+          <>
+            Monitored and optimized application performance, resulting in a 30%
+            reduction in downtime.
+          </>,
+          <>
+            Implemented containerization using Docker, enhancing scalability and
+            resource utilization.
+          </>,
+          <>
+            Built an auto-backup system for databases, ensuring data integrity
+            and availability.
+          </>,
+        ],
+      },
       {
         company: "Junior High School Homeschooling PINTAR",
         timeframe: "2023 - 2025",
@@ -209,6 +232,13 @@ const about: About = {
         ],
         images: [],
       },
+      {
+        company: "CV Petik Emas Indonesia",
+        timeframe: "Jan 2022 - Jun 2022",
+        role: "Full-Stack Developer",
+        achievements: [],
+        images: [],
+      },
     ],
   },
   studies: {
@@ -230,6 +260,74 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
+        title: "DevOps",
+        description: (
+          <>
+            Able to construct, deploy, maintain, and monitor CI/CD pipelines and
+            infrastructure of application.
+          </>
+        ),
+        tags: [
+          {
+            name: "Version Control (Git)",
+            icon: "git",
+          },
+          {
+            name: "GitHub",
+            icon: "github",
+          },
+          {
+            name: "Bitbucket",
+            icon: "bitbucket",
+          },
+          {
+            name: "Bash Scripting",
+            icon: "bash",
+          },
+          {
+            name: "Linux",
+            icon: "linux",
+          },
+          {
+            name: "Docker",
+            icon: "docker",
+          },
+          {
+            name: "Kubernetes",
+            icon: "kubernetes",
+          },
+          {
+            name: "Jenkins",
+            icon: "jenkins",
+          },
+          {
+            name: "Github Actions",
+            icon: "githubActions",
+          },
+          {
+            name: "SonarQube",
+            icon: "sonarqube",
+          },
+          {
+            name: "Terraform",
+            icon: "terraform",
+          },
+          {
+            name: "Grafana",
+            icon: "grafana",
+          },
+          {
+            name: "Prometheus",
+            icon: "prometheus",
+          },
+          {
+            name: "OpenTelemetry",
+            icon: "opentelemetry",
+          },
+        ],
+        images: [],
+      },
+      {
         title: "Web Development",
         description: (
           <>Able to develop website applications using framework or native.</>
@@ -241,7 +339,7 @@ const about: About = {
           },
           {
             name: "CSS",
-            icon: "css3",
+            icon: "css",
           },
           {
             name: "JavaScript",
@@ -267,50 +365,39 @@ const about: About = {
             name: "TailwindCSS",
             icon: "tailwindcss",
           },
-        ],
-        images: [
           {
-            src: "/images/projects/ttw/ttw-3.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "NodeJS",
+            icon: "nodejs",
           },
           {
-            src: "/images/projects/enshi/enshi-1.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Next.js",
+            icon: "nextjs",
           },
           {
-            src: "/images/projects/pjbl/pjbl-3.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Golang",
+            icon: "golang",
           },
           {
-            src: "/images/projects/booklib/booklib-3.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "MySQL",
+            icon: "mysql",
           },
           {
-            src: "/images/projects/dailylog/dailylog-3.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "PostgreSQL",
+            icon: "postgresql",
           },
           {
-            src: "/images/projects/ipcam/ipcam-3.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "MinIO",
+            icon: "minio",
+          },
+          {
+            name: "Redis",
+            icon: "redis",
+          },
+          {
+            name: "Swagger",
+            icon: "swagger",
           },
         ],
-      },
-      {
-        title: "Curriculum Development",
-        description: <>Developing curriculum.</>,
-        tags: [],
         images: [],
       },
     ],
